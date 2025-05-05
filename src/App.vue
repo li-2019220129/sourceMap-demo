@@ -8,6 +8,7 @@ onMounted(() => {
   if (testNum.length > 1) {
     console.log(testNum)
   }
+  console.log(1)
 })
 </script>
 

@@ -7,6 +7,7 @@
 </template>
 
 <script setup lang="ts">
+console.log('PreView')
 const props = defineProps({
   origin: {
     type: Object,

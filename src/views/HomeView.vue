@@ -23,7 +23,7 @@
         <el-row :gutter="20">
           <template v-if="item.origin">
             <el-col :span="24">
-              <!-- <pre>{{ item.origin }}</pre> -->
+              <pre>{{ item.origin }}</pre>
               <PreView :origin="item.origin"></PreView>
             </el-col>
           </template>

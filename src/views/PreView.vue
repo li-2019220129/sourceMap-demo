@@ -1,7 +1,7 @@
 <template>
   <div class="pre-code">
     <div class="error-detail">
-      <pre class="error-code" v-html="preLine()"></pre>
+      <pre class="error-code" v-html="preLine"></pre>
     </div>
   </div>
 </template>
@@ -26,6 +26,7 @@ const encodeHTML = (str: string) => {
 }
 
 const preLine = () => {
+  console.log(props.origin)
   const line = props.origin.line
   const originCodeLine = props.origin.source.split('\n')
   const len = originCodeLine.length - 1

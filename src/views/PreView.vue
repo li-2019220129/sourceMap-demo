@@ -27,7 +27,7 @@ const encodeHTML = (str: string) => {
 
 const preLine = () => {
   const line = props.origin.line
-  const originCodeLine = props.origin.origin.split('\n')
+  const originCodeLine = props.origin.source.split('\n')
   const len = originCodeLine.length - 1
   const start = line - 3 >= 0 ? line - 3 : 0
   const end = line + 5 >= len ? len : start + 5

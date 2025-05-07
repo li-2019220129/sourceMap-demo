@@ -23,7 +23,8 @@
         <el-row :gutter="20">
           <template v-if="item.origin">
             <el-col :span="24">
-              <div>{{ item.origin }}</div>
+              <!-- <pre>{{ item.origin }}</pre> -->
+              <PreView :origin="item.origin"></PreView>
             </el-col>
           </template>
           <template v-else>
@@ -52,6 +53,7 @@
 import { onMounted, ref } from 'vue'
 import { ElMessage } from 'element-plus'
 import sourceMap from 'source-map-js'
+import PreView from './PreView.vue'
 let js_error = ref(null)
 let isError = ref(false)
 let activeName = ref(1)

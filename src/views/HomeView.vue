@@ -94,7 +94,7 @@ const sourceMapUpload = (file: any) => {
   reader.readAsText(file)
   reader.onload = async (e: any) => {
     const code = await getSource(e.target.result, stackFrames.line, stackFrames.column)
-    js_error.value.stack_frames[stackFrames.index].origin = code.source
+    js_error.value.stack_frames[stackFrames.index].origin = code
     dialogVisible.value = false
   }
 }

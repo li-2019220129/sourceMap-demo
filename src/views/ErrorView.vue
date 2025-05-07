@@ -21,5 +21,7 @@ const triggerReferenceError = () => {
 const triggerSyntaxError = () => {
   throw new SyntaxError('Hello')
 }
+
+console.log('ErrorView')
 </script>
 <style scoped lang="less"></style>

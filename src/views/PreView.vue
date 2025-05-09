@@ -36,16 +36,12 @@ const preLine = () => {
   let newLines: string[] = []
   for (let i = start; i <= end; i++) {
     const content = i + 1 + '.    ' + encodeHTML(originCodeLine[i])
-    newLines.push(
-      `
-    <div class='code-line ${i + 1 == line ? 'heightlight' : ''}'>${content}</div>
-    `,
-    )
+    newLines.push(`<div class='code-line ${i + 1 == line ? 'heightlight' : ''}'>${content}</div>`)
   }
   return newLines.join('')
 }
 </script>
-<style scoped>
+<style>
 .error-code {
   padding: 10px;
   overflow: hidden;
